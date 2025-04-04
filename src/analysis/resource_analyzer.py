@@ -283,7 +283,7 @@ def _log_llm_response(
     # Print the LLM response to console with dividers for readability
     logger.info("=" * 80)
     logger.info(f"RESOURCE ANALYSIS FOR {pod_name}/{container_name}")
-    logger.info("=" * 80)\
-    logger.info(f"Response Message :")
+    logger.info("=" * 80)
+    logger.info(f"Response Message:")
     logger.info(llm_response)
     logger.info("=" * 80)
