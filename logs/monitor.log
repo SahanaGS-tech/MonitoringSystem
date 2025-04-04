@@ -1,0 +1,579 @@
+2025-04-04T04:13:34.803896+0000 | INFO | Metrics API initialized successfully
+2025-04-04T04:13:34.804144+0000 | INFO | === FastAPI Monitoring System Started ===
+2025-04-04T04:13:34.804217+0000 | INFO | Monitoring API at: http://fastapi-service.dev.svc.cluster.local
+2025-04-04T04:13:34.804262+0000 | INFO | Kubernetes namespace: dev
+2025-04-04T04:13:34.804301+0000 | INFO | Monitoring interval: 30 seconds
+2025-04-04T04:13:34.804335+0000 | INFO | Scheduling monitoring every 30 seconds
+2025-04-04T04:13:34.804371+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:13:34.804365
+2025-04-04T04:13:36.836063+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:13:38.864979+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:13:38.865742+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:13:38.865944+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:13:38.930871+0000 | INFO | Found 1 pods
+2025-04-04T04:13:38.932019+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:13:38.965472+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'fca8cbe3-6fd5-462d-a818-1f99718980a7', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:13:38 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:13:38.965930+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:13:39.150140+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:13:39.154361+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-x7hjf/fastapi-app to logs/pods/fastapi-app-5f986b57b8-x7hjf/fastapi-app_20250404_041339.log
+2025-04-04T04:13:39.154873+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:13:39.167375+0000 | INFO | Found 1 pods
+2025-04-04T04:13:39.167717+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:13:39.185541+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '257b12dd-3318-4107-b783-ccf8fb3548d6', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:13:39 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:13:39.186124+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:13:39.227844+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:13:39.228961+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-x7hjf/fastapi-app to logs/pods/fastapi-app-5f986b57b8-x7hjf/fastapi-app_20250404_041339.log
+2025-04-04T04:13:39.232494+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'eded594a-66b3-472f-8600-817bc352bf11', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:13:39 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:13:39.233150+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:13:39.233133
+2025-04-04T04:14:09.429911+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:14:09.429882
+2025-04-04T04:14:11.457976+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:14:13.491932+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:14:13.492203+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:14:13.492277+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:14:13.507132+0000 | INFO | Found 1 pods
+2025-04-04T04:14:13.507406+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:13.511050+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '144b3582-1f74-49d8-b3a6-a60fb86c3a6f', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:14:13 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:14:13.511240+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:13.530425+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:13.531341+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-x7hjf/fastapi-app to logs/pods/fastapi-app-5f986b57b8-x7hjf/fastapi-app_20250404_041413.log
+2025-04-04T04:14:13.531539+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:14:13.545786+0000 | INFO | Found 1 pods
+2025-04-04T04:14:13.546932+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:13.551983+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '5988d152-5073-49bb-a826-79a1c3bc29a6', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:14:13 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:14:13.552514+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:13.584334+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:13.585810+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-x7hjf/fastapi-app to logs/pods/fastapi-app-5f986b57b8-x7hjf/fastapi-app_20250404_041413.log
+2025-04-04T04:14:13.590186+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'd9160fcd-3bb7-480d-8dc8-5c336a8511b3', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:14:13 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:14:13.591148+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:14:13.591123
+2025-04-04T04:14:43.680165+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:14:43.680134
+2025-04-04T04:14:45.702458+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:14:47.734216+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:14:47.734603+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:14:47.734693+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:14:47.759911+0000 | INFO | Found 1 pods
+2025-04-04T04:14:47.763015+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:47.779283+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '82f03ac4-7cee-441b-9d9d-0f8c4bb1e3da', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:14:47 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:14:47.780814+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:47.839360+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:47.839950+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-x7hjf/fastapi-app to logs/pods/fastapi-app-5f986b57b8-x7hjf/fastapi-app_20250404_041447.log
+2025-04-04T04:14:47.840041+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:14:47.864101+0000 | INFO | Found 1 pods
+2025-04-04T04:14:47.864381+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:47.867673+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '126e2ebc-f5fe-4324-9a73-a85b339b0d6d', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:14:47 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:14:47.867879+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:47.885207+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:14:47.887036+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-x7hjf/fastapi-app to logs/pods/fastapi-app-5f986b57b8-x7hjf/fastapi-app_20250404_041447.log
+2025-04-04T04:14:47.891120+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '0c2a58ca-3709-4406-88f7-ee02af567d6c', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:14:47 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:14:47.891576+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:14:47.891554
+2025-04-04T04:15:17.959041+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:15:17.959009
+2025-04-04T04:15:19.981586+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:15:22.025570+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:15:22.026788+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:15:22.027348+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:15:22.041136+0000 | INFO | Found 1 pods
+2025-04-04T04:15:22.043780+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:15:22.048361+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '31cad510-71e8-4eb2-abd4-9d14b1ff57a5', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:15:22 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:15:22.048827+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:15:22.126116+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:15:22.130740+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-x7hjf/fastapi-app to logs/pods/fastapi-app-5f986b57b8-x7hjf/fastapi-app_20250404_041522.log
+2025-04-04T04:15:22.130923+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:15:22.157842+0000 | INFO | Found 1 pods
+2025-04-04T04:15:22.159006+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:15:22.172317+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'b5e0721b-2d9e-48b0-8fcb-9cd4b64c0433', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:15:22 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:15:22.174893+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:15:22.212988+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-x7hjf
+2025-04-04T04:15:22.214767+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-x7hjf/fastapi-app to logs/pods/fastapi-app-5f986b57b8-x7hjf/fastapi-app_20250404_041522.log
+2025-04-04T04:15:22.218468+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '720eab32-68de-464a-9680-d830f8442e2a', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:15:22 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:15:22.218754+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:15:22.218735
+2025-04-04T04:15:46.801236+0000 | INFO | Monitoring stopped by user
+2025-04-04T04:15:46.801734+0000 | INFO | === FastAPI Monitoring System Stopped ===
+2025-04-04T04:17:51.047975+0000 | INFO | Metrics API initialized successfully
+2025-04-04T04:17:51.048332+0000 | INFO | === FastAPI Monitoring System Started ===
+2025-04-04T04:17:51.048420+0000 | INFO | Monitoring API at: http://fastapi-service.dev.svc.cluster.local
+2025-04-04T04:17:51.048468+0000 | INFO | Kubernetes namespace: dev
+2025-04-04T04:17:51.048508+0000 | INFO | Monitoring interval: 30 seconds
+2025-04-04T04:17:51.048544+0000 | INFO | Scheduling monitoring every 30 seconds
+2025-04-04T04:17:51.048583+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:17:51.048576
+2025-04-04T04:17:53.075800+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:17:55.103790+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:17:55.104051+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:17:55.104751+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:17:55.179273+0000 | INFO | Found 1 pods
+2025-04-04T04:17:55.182340+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:17:55.208678+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'c9bf9eab-3952-4eb7-9023-314e66500d1e', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:17:55 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:17:55.209342+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:17:55.296407+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:17:55.296812+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_041755.log
+2025-04-04T04:17:55.296902+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:17:55.310359+0000 | INFO | Found 1 pods
+2025-04-04T04:17:55.311733+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:17:55.313906+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '74e9b491-fd52-4878-923f-ea00379e7915', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:17:55 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:17:55.314177+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:17:55.394657+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:17:55.413749+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_041755.log
+2025-04-04T04:17:55.429393+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '6e169851-77f1-4582-8f72-3cd85d20367b', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:17:55 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:17:55.430135+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:17:55.430111
+2025-04-04T04:18:25.524515+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:18:25.524473
+2025-04-04T04:18:27.567588+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:18:29.580728+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:18:29.582870+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:18:29.583008+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:18:29.616074+0000 | INFO | Found 1 pods
+2025-04-04T04:18:29.617076+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:18:29.623060+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '727a2e84-66dd-467d-b9db-d19a18514c2a', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:18:29 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:18:29.623443+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:18:29.653468+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:18:29.662359+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_041829.log
+2025-04-04T04:18:29.663280+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:18:29.687650+0000 | INFO | Found 1 pods
+2025-04-04T04:18:29.688052+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:18:29.690683+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '9f9310cf-38ab-4264-b0a7-fc82eb9e053f', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:18:29 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:18:29.691211+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:18:29.707742+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:18:29.708452+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_041829.log
+2025-04-04T04:18:29.713086+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'c759a3e7-1254-41fd-b2da-aea2019e148d', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:18:29 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:18:29.713584+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:18:29.713562
+2025-04-04T04:18:59.786812+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:18:59.786286
+2025-04-04T04:19:01.819131+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:19:03.836889+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:19:03.837833+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:19:03.837982+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:19:03.859241+0000 | INFO | Found 1 pods
+2025-04-04T04:19:03.859798+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:03.862612+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '52288146-7601-4741-942f-5dc7429607f5', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:19:03 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:19:03.862952+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:03.887460+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:03.888501+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_041903.log
+2025-04-04T04:19:03.888898+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:19:03.895941+0000 | INFO | Found 1 pods
+2025-04-04T04:19:03.896467+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:03.899491+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '5b83458b-cb7a-48d9-b221-a41c196a6fee', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:19:03 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:19:03.900316+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:03.917179+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:03.918086+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_041903.log
+2025-04-04T04:19:03.930358+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '147a2151-c0c6-4cd6-b9c7-aaa1dab73ca5', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:19:03 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:19:03.931324+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:19:03.931301
+2025-04-04T04:19:34.082983+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:19:34.082953
+2025-04-04T04:19:36.111175+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:19:38.148784+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:19:38.149078+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:19:38.149173+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:19:38.163710+0000 | INFO | Found 1 pods
+2025-04-04T04:19:38.164298+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:38.167431+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '751cde82-0824-4a69-b9d6-48131d473a37', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:19:38 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:19:38.168033+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:38.189466+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:38.191358+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_041938.log
+2025-04-04T04:19:38.191708+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:19:38.203530+0000 | INFO | Found 1 pods
+2025-04-04T04:19:38.204109+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:38.210785+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '66b009f8-928d-4948-a78d-4b63da6e2924', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:19:38 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:19:38.211083+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:38.249416+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:19:38.251200+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_041938.log
+2025-04-04T04:19:38.254999+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'd57a6dff-4cb4-4698-8343-e4a1ecfed36b', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:19:38 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:19:38.255385+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:19:38.255369
+2025-04-04T04:19:57.806100+0000 | INFO | Monitoring stopped by user
+2025-04-04T04:19:57.806459+0000 | INFO | === FastAPI Monitoring System Stopped ===
+2025-04-04T04:26:27.705939+0000 | INFO | Metrics API initialized successfully
+2025-04-04T04:26:27.706410+0000 | INFO | === FastAPI Monitoring System Started ===
+2025-04-04T04:26:27.706511+0000 | INFO | Monitoring API at: http://fastapi-service.dev.svc.cluster.local
+2025-04-04T04:26:27.706563+0000 | INFO | Kubernetes namespace: dev
+2025-04-04T04:26:27.706605+0000 | INFO | Monitoring interval: 30 seconds
+2025-04-04T04:26:27.706644+0000 | INFO | Scheduling monitoring every 30 seconds
+2025-04-04T04:26:27.706687+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:26:27.706680
+2025-04-04T04:26:29.726428+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:26:31.768790+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:26:31.769718+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:26:31.769914+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:26:31.891818+0000 | INFO | Found 1 pods
+2025-04-04T04:26:31.892543+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:26:31.965380+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '8bf04def-689c-4e2a-b4e3-9d30c4e3259e', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:26:31 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:26:31.969127+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:26:32.071614+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:26:32.072207+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_042632.log
+2025-04-04T04:26:32.072300+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:26:32.082355+0000 | INFO | Found 1 pods
+2025-04-04T04:26:32.083102+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:26:32.086574+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '4e241a05-da57-4c78-9d37-4f3ca8af7936', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:26:32 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:26:32.086964+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:26:32.194100+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:26:32.195122+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_042632.log
+2025-04-04T04:26:32.200078+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'b000caad-a255-4c97-97c5-1f2835e510bd', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:26:32 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:26:32.201226+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:26:32.201208
+2025-04-04T04:27:02.295177+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:27:02.295143
+2025-04-04T04:27:04.335422+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:27:06.369353+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:27:06.370231+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:27:06.371120+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:27:06.450887+0000 | INFO | Found 1 pods
+2025-04-04T04:27:06.451863+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:06.460200+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '49e57f91-e749-4ed8-9ff1-ca282d3d98fa', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:27:06 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:27:06.460859+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:06.527309+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:06.534719+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_042706.log
+2025-04-04T04:27:06.534940+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:27:06.609287+0000 | INFO | Found 1 pods
+2025-04-04T04:27:06.626370+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:06.672017+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '5fab6c85-b409-4051-9540-28859c5db676', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:27:06 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:27:06.684104+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:06.810223+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:06.821807+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_042706.log
+2025-04-04T04:27:06.837633+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '0dabd3d1-e692-4421-b1a4-a89655a52f77', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:27:06 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:27:06.838218+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:27:06.838197
+2025-04-04T04:27:36.902880+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:27:36.902839
+2025-04-04T04:27:38.928741+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:27:40.976411+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:27:40.976867+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:27:40.977144+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:27:40.994821+0000 | INFO | Found 1 pods
+2025-04-04T04:27:40.995169+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:40.998514+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '2a83654c-3233-462b-858d-bb90deb833bc', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:27:40 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:27:40.998863+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:41.036229+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:41.037273+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_042741.log
+2025-04-04T04:27:41.037694+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:27:41.045821+0000 | INFO | Found 1 pods
+2025-04-04T04:27:41.046545+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:41.049282+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'd058a6e9-f2d3-48a2-bfd9-ef1f5bd90428', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:27:41 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:27:41.049792+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:41.072930+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:27:41.073487+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_042741.log
+2025-04-04T04:27:41.077417+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '257659d3-5864-44ad-babf-00a9295686ba', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:27:41 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:27:41.078574+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:27:41.078552
+2025-04-04T04:28:11.212076+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:28:11.211996
+2025-04-04T04:28:13.252082+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:28:15.290886+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:28:15.291087+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:28:15.291139+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:28:15.303704+0000 | INFO | Found 1 pods
+2025-04-04T04:28:15.304161+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:15.307192+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '38ff6826-9385-4575-8638-5bc156f49d04', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:28:15 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:28:15.307398+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:15.324652+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:15.325035+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_042815.log
+2025-04-04T04:28:15.325122+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:28:15.355158+0000 | INFO | Found 1 pods
+2025-04-04T04:28:15.355414+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:15.358162+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '106a9958-6ff0-4781-827f-1a47e78afcf4', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:28:15 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:28:15.358348+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:15.374914+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:15.375451+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_042815.log
+2025-04-04T04:28:15.378483+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '8de8ed6c-67db-460b-94f4-2e8d2bb1cc23', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:28:15 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:28:15.378832+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:28:15.378818
+2025-04-04T04:28:45.561200+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:28:45.561144
+2025-04-04T04:28:47.642137+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:28:49.704272+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:28:49.704902+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:28:49.705041+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:28:49.725047+0000 | INFO | Found 1 pods
+2025-04-04T04:28:49.729932+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:49.741937+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'f43095db-5389-4dbd-b83b-0d4e9b8b1495', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:28:49 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:28:49.742312+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:49.793949+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:49.795005+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_042849.log
+2025-04-04T04:28:49.795368+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:28:49.815272+0000 | INFO | Found 1 pods
+2025-04-04T04:28:49.815897+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:49.819666+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'afe1fb06-0174-4299-8700-dbce95ba1084', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:28:49 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:28:49.820869+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:49.860048+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:28:49.861229+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_042849.log
+2025-04-04T04:28:49.868952+0000 | ERROR | Error getting pod metrics: (503)
+Reason: Service Unavailable
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '51be4582-cb57-448d-b114-0b69d4608d8e', 'Cache-Control': 'no-cache, private', 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff', 'X-Kubernetes-Pf-Flowschema-Uid': 'af897f4b-434f-4f63-864e-216b96070d8d', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'dac0c011-728f-466b-b873-2f44dd1adc6d', 'Date': 'Fri, 04 Apr 2025 04:28:49 GMT', 'Content-Length': '20'})
+HTTP response body: service unavailable
+
+
+2025-04-04T04:28:49.869564+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:28:49.869547
+2025-04-04T04:29:08.757599+0000 | INFO | Monitoring stopped by user
+2025-04-04T04:29:08.758724+0000 | INFO | === FastAPI Monitoring System Stopped ===
+2025-04-04T04:31:42.974136+0000 | INFO | Metrics API initialized successfully
+2025-04-04T04:31:42.975054+0000 | INFO | === FastAPI Monitoring System Started ===
+2025-04-04T04:31:42.975301+0000 | INFO | Monitoring API at: http://fastapi-service.dev.svc.cluster.local
+2025-04-04T04:31:42.975415+0000 | INFO | Kubernetes namespace: dev
+2025-04-04T04:31:42.975468+0000 | INFO | Monitoring interval: 30 seconds
+2025-04-04T04:31:42.975966+0000 | INFO | Scheduling monitoring every 30 seconds
+2025-04-04T04:31:42.976035+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:31:42.976025
+2025-04-04T04:31:45.068940+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:31:47.175828+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:31:47.177234+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:31:47.177432+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:31:47.246202+0000 | INFO | Found 1 pods
+2025-04-04T04:31:47.246537+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:31:47.304678+0000 | INFO | Retrieved metrics for 1 pods
+2025-04-04T04:31:47.305290+0000 | INFO | Pod fastapi-app-5f986b57b8-klsf4, Container fastapi-app: CPU: 9232724n, Memory: 30116Ki
+2025-04-04T04:31:47.305396+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:31:47.340451+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:31:47.345650+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_043147.log
+2025-04-04T04:31:47.350352+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:31:47.406460+0000 | INFO | Found 1 pods
+2025-04-04T04:31:47.407104+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:31:47.443303+0000 | INFO | Retrieved metrics for 1 pods
+2025-04-04T04:31:47.443735+0000 | INFO | Pod fastapi-app-5f986b57b8-klsf4, Container fastapi-app: CPU: 9232724n, Memory: 30116Ki
+2025-04-04T04:31:47.443875+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:31:47.500887+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:31:47.501847+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_043147.log
+2025-04-04T04:31:47.544096+0000 | INFO | Retrieved metrics for 1 pods
+2025-04-04T04:31:47.544388+0000 | INFO | Resource metrics - Pod: fastapi-app-5f986b57b8-klsf4, Container: fastapi-app, CPU: 9232724n, Memory: 30116Ki
+2025-04-04T04:31:47.544471+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:31:47.544462
+2025-04-04T04:32:17.674000+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:32:17.673970
+2025-04-04T04:32:19.722397+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:32:21.759587+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:32:21.762960+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:32:21.763203+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:32:21.790531+0000 | INFO | Found 1 pods
+2025-04-04T04:32:21.791603+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:21.807257+0000 | INFO | Retrieved metrics for 1 pods
+2025-04-04T04:32:21.807923+0000 | INFO | Pod fastapi-app-5f986b57b8-klsf4, Container fastapi-app: CPU: 10832420n, Memory: 30116Ki
+2025-04-04T04:32:21.808081+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:21.857207+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:21.858257+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_043221.log
+2025-04-04T04:32:21.858768+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:32:21.889379+0000 | INFO | Found 1 pods
+2025-04-04T04:32:21.890112+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:21.902047+0000 | INFO | Retrieved metrics for 1 pods
+2025-04-04T04:32:21.902376+0000 | INFO | Pod fastapi-app-5f986b57b8-klsf4, Container fastapi-app: CPU: 10832420n, Memory: 30116Ki
+2025-04-04T04:32:21.902470+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:21.935940+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:21.937389+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_043221.log
+2025-04-04T04:32:21.950888+0000 | INFO | Retrieved metrics for 1 pods
+2025-04-04T04:32:21.951282+0000 | INFO | Resource metrics - Pod: fastapi-app-5f986b57b8-klsf4, Container: fastapi-app, CPU: 10832420n, Memory: 30116Ki
+2025-04-04T04:32:21.951493+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:32:21.951476
+2025-04-04T04:32:52.100190+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:32:52.100149
+2025-04-04T04:32:54.469381+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/ is DOWN. Error: Connection error
+2025-04-04T04:32:56.535411+0000 | ERROR | Endpoint http://fastapi-service.dev.svc.cluster.local/health is DOWN. Error: Connection error
+2025-04-04T04:32:56.535614+0000 | INFO | API Monitoring: 0/2 endpoints are UP
+2025-04-04T04:32:56.536162+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/ - Connection error
+2025-04-04T04:32:56.560022+0000 | INFO | Found 1 pods
+2025-04-04T04:32:56.560240+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:56.567391+0000 | INFO | Retrieved metrics for 1 pods
+2025-04-04T04:32:56.567868+0000 | INFO | Pod fastapi-app-5f986b57b8-klsf4, Container fastapi-app: CPU: 6539402n, Memory: 30116Ki
+2025-04-04T04:32:56.568014+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:56.611334+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:56.613269+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_043256.log
+2025-04-04T04:32:56.613897+0000 | WARNING | Failed endpoint: http://fastapi-service.dev.svc.cluster.local/health - Connection error
+2025-04-04T04:32:56.626557+0000 | INFO | Found 1 pods
+2025-04-04T04:32:56.626930+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:56.637321+0000 | INFO | Retrieved metrics for 1 pods
+2025-04-04T04:32:56.637951+0000 | INFO | Pod fastapi-app-5f986b57b8-klsf4, Container fastapi-app: CPU: 6539402n, Memory: 30116Ki
+2025-04-04T04:32:56.638141+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:56.667326+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:32:56.668314+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_043256.log
+2025-04-04T04:32:56.679099+0000 | INFO | Retrieved metrics for 1 pods
+2025-04-04T04:32:56.679868+0000 | INFO | Resource metrics - Pod: fastapi-app-5f986b57b8-klsf4, Container: fastapi-app, CPU: 6539402n, Memory: 30116Ki
+2025-04-04T04:32:56.679978+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:32:56.679970
+2025-04-04T04:33:20.459321+0000 | INFO | Monitoring stopped by user
+2025-04-04T04:33:20.460008+0000 | INFO | === FastAPI Monitoring System Stopped ===
+2025-04-04T04:33:30.107788+0000 | INFO | Metrics API initialized successfully
+2025-04-04T04:33:30.108183+0000 | INFO | === FastAPI Monitoring System Started ===
+2025-04-04T04:33:30.108290+0000 | INFO | Monitoring API at: http://192.168.49.2:31158
+2025-04-04T04:33:30.108347+0000 | INFO | Kubernetes namespace: dev
+2025-04-04T04:33:30.108394+0000 | INFO | Monitoring interval: 30 seconds
+2025-04-04T04:33:30.108437+0000 | INFO | Scheduling monitoring every 30 seconds
+2025-04-04T04:33:30.108484+0000 | INFO | Starting monitoring cycle at 2025-04-04T04:33:30.108476
+2025-04-04T04:33:30.117580+0000 | INFO | Endpoint http://192.168.49.2:31158/ is UP. Response time: 9.01ms
+2025-04-04T04:33:32.174504+0000 | ERROR | Endpoint http://192.168.49.2:31158/health is DOWN. Error: Unexpected status code: 404
+2025-04-04T04:33:32.174888+0000 | INFO | API Monitoring: 1/2 endpoints are UP
+2025-04-04T04:33:32.175003+0000 | WARNING | Failed endpoint: http://192.168.49.2:31158/health - Unexpected status code: 404
+2025-04-04T04:33:32.296913+0000 | INFO | Found 1 pods
+2025-04-04T04:33:32.297375+0000 | INFO | Collecting resource metrics for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:33:32.334653+0000 | INFO | Retrieved metrics for 1 pods
+2025-04-04T04:33:32.341014+0000 | INFO | Pod fastapi-app-5f986b57b8-klsf4, Container fastapi-app: CPU: 9822685n, Memory: 30128Ki
+2025-04-04T04:33:32.341212+0000 | INFO | Collecting logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:33:32.454994+0000 | INFO | Retrieved logs for pod fastapi-app-5f986b57b8-klsf4
+2025-04-04T04:33:32.455537+0000 | INFO | Saved logs for fastapi-app-5f986b57b8-klsf4/fastapi-app to logs/pods/fastapi-app-5f986b57b8-klsf4/fastapi-app_20250404_043332.log
+2025-04-04T04:33:32.461399+0000 | INFO | Retrieved metrics for 1 pods
+2025-04-04T04:33:32.462263+0000 | INFO | Resource metrics - Pod: fastapi-app-5f986b57b8-klsf4, Container: fastapi-app, CPU: 9822685n, Memory: 30128Ki
+2025-04-04T04:33:32.462857+0000 | INFO | Completed monitoring cycle at 2025-04-04T04:33:32.462831
+2025-04-04T04:33:56.438440+0000 | INFO | Monitoring stopped by user
+2025-04-04T04:33:56.439304+0000 | INFO | === FastAPI Monitoring System Stopped ===

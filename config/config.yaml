@@ -1,0 +1,32 @@
+# API Monitoring Configuration
+api:
+  base_url: "http://192.168.49.2:31158"  # Kubernetes internal service name
+  external_url: ""  # Will be filled with Minikube service URL
+  endpoints:
+    - path: "/"
+      method: "GET"
+      expected_status: 200
+      timeout: 5
+    - path: "/health"
+      method: "GET"
+      expected_status: 200
+      timeout: 3
+
+# Monitoring settings
+monitoring:
+  interval: 30  # Check every 30 seconds
+  timeout: 10   # Request timeout in seconds
+  retries: 3    # Number of retries before marking as failed
+
+# Kubernetes settings
+kubernetes:
+  namespace: "dev"
+  labels:
+    app: "fastapi-app"
+  
+# Logging configuration
+logging:
+  level: "INFO"
+  file: "logs/monitor.log"
+  format: "{time} | {level} | {message}"
+  retention: "7 days"

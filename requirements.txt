@@ -1,0 +1,9 @@
+# Core dependencies
+requests
+pyyaml
+kubernetes
+schedule
+loguru
+
+# Optional visualization (if needed)
+flask

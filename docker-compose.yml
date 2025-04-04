@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  monitoring:
+    build: .
+    container_name: fastapi-monitor
+    volumes:
+      - ~/.kube:/root/.kube:ro
+      - ./logs:/app/logs
+    environment:
+      - API_BASE_URL=http://192.168.49.2:31158
+      - K8S_NAMESPACE=dev
+    restart: unless-stopped
