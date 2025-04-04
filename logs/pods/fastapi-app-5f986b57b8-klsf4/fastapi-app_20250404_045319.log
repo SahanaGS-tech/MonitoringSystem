@@ -1,0 +1,40 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     10.244.0.1:4260 - "GET / HTTP/1.1" 200 OK
+INFO:     10.244.0.1:5910 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:11031 - "GET / HTTP/1.1" 200 OK
+INFO:     10.244.0.1:26673 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:35161 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:33510 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:54948 - "GET / HTTP/1.1" 200 OK
+INFO:     10.244.0.1:27984 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:47380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:64871 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:19564 - "GET / HTTP/1.1" 200 OK
+INFO:     10.244.0.1:10945 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:15650 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:22537 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:24832 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     10.244.0.1:24832 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     10.244.0.1:57526 - "GET / HTTP/1.1" 200 OK
+INFO:     10.244.0.1:27380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:64653 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:11601 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:35704 - "GET / HTTP/1.1" 200 OK
+INFO:     10.244.0.1:21148 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:29518 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:50803 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:33893 - "GET / HTTP/1.1" 200 OK
+INFO:     10.244.0.1:47527 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:4197 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:12904 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:60167 - "GET / HTTP/1.1" 200 OK
+INFO:     10.244.0.1:39069 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:64369 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:49812 - "GET /health HTTP/1.1" 404 Not Found

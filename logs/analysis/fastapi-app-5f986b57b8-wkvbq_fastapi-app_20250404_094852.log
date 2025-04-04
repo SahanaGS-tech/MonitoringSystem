@@ -1,0 +1,20 @@
+=== RESOURCE ANALYSIS METADATA ===
+Timestamp: 2025-04-04T09:48:52.035948
+Pod: fastapi-app-5f986b57b8-wkvbq
+Container: fastapi-app
+CPU Status: NORMAL
+CPU Usage: 342094585 nanocores
+CPU Utilization: 68.4%
+Memory Status: OVERFLOW
+Memory Usage: 465567744 bytes (444.0 MiB)
+Memory Utilization: 173.4%
+
+=== LLM ANALYSIS RESPONSE ===
+
+⚠️ MEMORY USAGE ALERT: Pod fastapi-app-5f986b57b8-wkvbq, Container fastapi-app
+
+HIGH MEMORY USAGE DETECTED: The container is using 173.4% of its requested memory (444.0Mi). This exceeds the high threshold of 400.0Mi and may indicate a memory leak or inefficient resource usage pattern. Consider investigating application behavior or increasing the resource limits.
+
+NORMAL CPU USAGE: The container is using 68.4% of its requested cpu (342.1m), which is within expected parameters.
+
+RECOMMENDATION: Check for memory leaks or unexpected caching behavior. Consider using memory profiling tools to identify memory usage patterns. If this is expected behavior for your workload, increase memory limits to prevent potential OOM (Out of Memory) kills.

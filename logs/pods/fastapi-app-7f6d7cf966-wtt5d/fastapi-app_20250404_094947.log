@@ -1,0 +1,15 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     10.244.0.1:6996 - "GET / HTTP/1.1" 200 OK
+INFO:     10.244.0.1:57589 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:43063 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:28541 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:44763 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     10.244.0.1:31803 - "GET / HTTP/1.1" 200 OK
+INFO:     10.244.0.1:29313 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:15439 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     10.244.0.1:57561 - "GET /health HTTP/1.1" 404 Not Found

@@ -1,0 +1,22 @@
+=== RESOURCE ANALYSIS METADATA ===
+Timestamp: 2025-04-04T09:50:52.461631
+Pod: fastapi-app-7f6d7cf966-wtt5d
+Container: fastapi-app
+CPU Status: UNDERFLOW
+CPU Usage: 6515971 nanocores
+CPU Utilization: 1.3%
+Memory Status: UNDERFLOW
+Memory Usage: 30687232 bytes (29.3 MiB)
+Memory Utilization: 11.4%
+
+=== LLM ANALYSIS RESPONSE ===
+
+ℹ️ RESOURCE UNDERUTILIZATION NOTICE: Pod fastapi-app-7f6d7cf966-wtt5d, Container fastapi-app
+
+Both CPU and memory usage are significantly below requested resources.
+
+LOW CPU USAGE DETECTED: The container is only using 1.3% of its requested cpu (6.5m). This is below the low threshold of 100.0m and may indicate over-provisioning. Consider reducing resource requests to improve cluster utilization efficiency.
+
+LOW MEMORY USAGE DETECTED: The container is only using 11.4% of its requested memory (29.3Mi). This is below the low threshold of 50.0Mi and may indicate over-provisioning. Consider reducing resource requests to improve cluster utilization efficiency.
+
+RECOMMENDATION: The container is overprovisioned. Consider reducing CPU and memory requests to improve cluster resource efficiency. For cost optimization, these resources could be better allocated to other workloads.

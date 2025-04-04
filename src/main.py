@@ -8,8 +8,9 @@ from src.config import load_config
 from src.logs.logger import setup_logging
 from src.api_monitor.monitor import ApiMonitor
 from src.metrics.kubernetes_monitor import KubernetesMonitor
+from src.analysis.resource_analyzer import ResourceAnalyzer
 
-def run_monitoring_cycle(api_monitor, k8s_monitor, logger):
+def run_monitoring_cycle(api_monitor, k8s_monitor, resource_analyzer, logger):
     """Run a complete monitoring cycle"""
     timestamp = datetime.now().isoformat()
     logger.info(f"Starting monitoring cycle at {timestamp}")
@@ -59,6 +60,13 @@ def run_monitoring_cycle(api_monitor, k8s_monitor, logger):
     
     # Get resource metrics for all pods
     metrics = k8s_monitor.get_resource_metrics()
+    
+    # Analyze resource usage
+    if metrics:
+        analysis_results = resource_analyzer.analyze_resource_usage(metrics)
+        logger.info(f"Performed resource usage analysis for {len(analysis_results)} pods")
+    
+    # Log resource metrics
     for pod_metric in metrics:
         pod_name = pod_metric['name']
         for container_name, container_metrics in pod_metric['containers'].items():
@@ -79,6 +87,7 @@ def main():
     # Initialize monitors
     api_monitor = ApiMonitor(config)
     k8s_monitor = KubernetesMonitor(config['kubernetes'])
+    resource_analyzer = ResourceAnalyzer(config)
     
     # Log startup information
     logger.info("=== FastAPI Monitoring System Started ===")
@@ -91,10 +100,10 @@ def main():
     logger.info(f"Scheduling monitoring every {interval} seconds")
     
     # Run the first cycle immediately
-    run_monitoring_cycle(api_monitor, k8s_monitor, logger)
+    run_monitoring_cycle(api_monitor, k8s_monitor, resource_analyzer, logger)
     
     # Schedule subsequent cycles
-    schedule.every(interval).seconds.do(run_monitoring_cycle, api_monitor, k8s_monitor, logger)
+    schedule.every(interval).seconds.do(run_monitoring_cycle, api_monitor, k8s_monitor, resource_analyzer, logger)
     
     # Keep running
     try:
