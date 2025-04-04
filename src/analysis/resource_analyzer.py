@@ -7,20 +7,20 @@ from loguru import logger
 class ResourceAnalyzer:
     def __init__(self, config: Dict[str, Any]):
         # Mock thresholds - we'd adjust these based on actual pod requirements
-          self.thresholds = {
+        self.thresholds = {
             'cpu': {
-        'high': 10000000,        # 10m (below actual 11.08m)
-        'low': 5000000,          # 5m
-        'request': 8000000,      # 8m
-        'limit': 15000000        # 15m
-    },
-    'memory': {
-        'high': 25 * 1024 * 1024,    # 25Mi (below actual 30.9Mi)
-        'low': 10 * 1024 * 1024,     # 10Mi
-        'request': 20 * 1024 * 1024, # 20Mi
-        'limit': 40 * 1024 * 1024    # 40Mi
-    }
-    }
+                'high': 10000000,        # 10m (below actual 11.08m)
+                'low': 5000000,          # 5m
+                'request': 8000000,      # 8m
+                'limit': 15000000        # 15m
+            },
+            'memory': {
+                'high': 25 * 1024 * 1024,    # 25Mi (below actual 30.9Mi)
+                'low': 10 * 1024 * 1024,     # 10Mi
+                'request': 20 * 1024 * 1024, # 20Mi
+                'limit': 40 * 1024 * 1024    # 40Mi
+            }
+        }
         
         # Create directory for analysis logs
         os.makedirs('logs/analysis', exist_ok=True)
