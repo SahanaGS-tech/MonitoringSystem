@@ -10,7 +10,7 @@ class KubernetesMonitor:
         
         # Initialize Kubernetes client
         try:
-            config.load_incluster_config()  # If running inside Kubernetes
+            config.load_incluster_config()  
         except:
             config.load_kube_config()  # If running locally
             
