@@ -249,41 +249,41 @@ class ResourceAnalyzer:
                 f"for the current workload."
             )
     
-def _log_llm_response(
-    self,
-    pod_name: str,
-    container_name: str,
-    container_analysis: Dict[str, Any],
-    llm_response: str
-):
-    """Log LLM response to a file and console"""
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    log_file = f"logs/analysis/{pod_name}_{container_name}_{timestamp}.log"
-    
-    with open(log_file, 'w') as f:
-        # Write metadata section
-        f.write("=== RESOURCE ANALYSIS METADATA ===\n")
-        f.write(f"Timestamp: {datetime.now().isoformat()}\n")
-        f.write(f"Pod: {pod_name}\n")
-        f.write(f"Container: {container_name}\n")
-        f.write(f"CPU Status: {container_analysis['cpu']['status']}\n")
-        f.write(f"CPU Usage: {container_analysis['cpu']['usage']} nanocores\n")
-        f.write(f"CPU Utilization: {container_analysis['cpu']['utilization_percentage']:.1f}%\n")
-        f.write(f"Memory Status: {container_analysis['memory']['status']}\n")
-        f.write(f"Memory Usage: {container_analysis['memory']['usage']} bytes ({container_analysis['memory']['usage']/1024/1024:.1f} MiB)\n")
-        f.write(f"Memory Utilization: {container_analysis['memory']['utilization_percentage']:.1f}%\n")
-        f.write("\n=== LLM ANALYSIS RESPONSE ===\n\n")
+    def _log_llm_response(
+        self,
+        pod_name: str,
+        container_name: str,
+        container_analysis: Dict[str, Any],
+        llm_response: str
+    ):
+        """Log LLM response to a file and console"""
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        log_file = f"logs/analysis/{pod_name}_{container_name}_{timestamp}.log"
         
-        # Write LLM response
-        f.write(llm_response)
-    
-    # Also log to console
-    logger.info(f"Resource analysis for {pod_name}/{container_name} saved to {log_file}")
-    
-    # Print the LLM response to console with dividers for readability
-    logger.info("=" * 80)
-    logger.info(f"RESOURCE ANALYSIS FOR {pod_name}/{container_name}")
-    logger.info("=" * 80)
-    logger.info(f"Response Message:")
-    logger.info(llm_response)
-    logger.info("=" * 80)
+        with open(log_file, 'w') as f:
+            # Write metadata section
+            f.write("=== RESOURCE ANALYSIS METADATA ===\n")
+            f.write(f"Timestamp: {datetime.now().isoformat()}\n")
+            f.write(f"Pod: {pod_name}\n")
+            f.write(f"Container: {container_name}\n")
+            f.write(f"CPU Status: {container_analysis['cpu']['status']}\n")
+            f.write(f"CPU Usage: {container_analysis['cpu']['usage']} nanocores\n")
+            f.write(f"CPU Utilization: {container_analysis['cpu']['utilization_percentage']:.1f}%\n")
+            f.write(f"Memory Status: {container_analysis['memory']['status']}\n")
+            f.write(f"Memory Usage: {container_analysis['memory']['usage']} bytes ({container_analysis['memory']['usage']/1024/1024:.1f} MiB)\n")
+            f.write(f"Memory Utilization: {container_analysis['memory']['utilization_percentage']:.1f}%\n")
+            f.write("\n=== LLM ANALYSIS RESPONSE ===\n\n")
+            
+            # Write LLM response
+            f.write(llm_response)
+        
+        # Also log to console
+        logger.info(f"Resource analysis for {pod_name}/{container_name} saved to {log_file}")
+        
+        # Print the LLM response to console with dividers for readability
+        logger.info("=" * 80)
+        logger.info(f"RESOURCE ANALYSIS FOR {pod_name}/{container_name}")
+        logger.info("=" * 80)
+        logger.info(f"Response Message:")
+        logger.info(llm_response)
+        logger.info("=" * 80)
