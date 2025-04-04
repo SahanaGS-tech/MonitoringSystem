@@ -284,5 +284,5 @@ def _log_llm_response(
     logger.info("=" * 80)
     logger.info(f"RESOURCE ANALYSIS FOR {pod_name}/{container_name}")
     logger.info("=" * 80)
-    logger.info("Response Message :"llm_response)
+    logger.info("Response Message :",llm_response)
     logger.info("=" * 80)
