@@ -1,0 +1,113 @@
+
+self.thresholds = {
+    'cpu': {
+        'high': 10000000,        # 10m (below actual 11.08m)
+        'low': 5000000,          # 5m
+        'request': 8000000,      # 8m
+        'limit': 15000000        # 15m
+    },
+    'memory': {
+        'high': 100 * 1024 * 1024,   # 100Mi
+        'low': 20 * 1024 * 1024,     # 20Mi
+        'request': 50 * 1024 * 1024, # 50Mi
+        'limit': 150 * 1024 * 1024   # 150Mi
+    }
+}
+```
+
+## 2. CPU Normal & Memory Overflow
+
+```python
+self.thresholds = {
+    'cpu': {
+        'high': 20000000,        # 20m
+        'low': 5000000,          # 5m
+        'request': 12000000,     # 12m
+        'limit': 25000000        # 25m
+    },
+    'memory': {
+        'high': 25 * 1024 * 1024,    # 25Mi (below actual 30.9Mi)
+        'low': 10 * 1024 * 1024,     # 10Mi
+        'request': 20 * 1024 * 1024, # 20Mi
+        'limit': 40 * 1024 * 1024    # 40Mi
+    }
+}
+```
+
+## 3. CPU Underflow & Memory Normal
+
+```python
+self.thresholds = {
+    'cpu': {
+        'high': 100000000,       # 100m
+        'low': 15000000,         # 15m (above actual 11.08m)
+        'request': 50000000,     # 50m
+        'limit': 150000000       # 150m
+    },
+    'memory': {
+        'high': 100 * 1024 * 1024,   # 100Mi
+        'low': 20 * 1024 * 1024,     # 20Mi
+        'request': 60 * 1024 * 1024, # 60Mi
+        'limit': 120 * 1024 * 1024   # 120Mi
+    }
+}
+```
+
+## 4. CPU Normal & Memory Underflow
+
+```python
+self.thresholds = {
+    'cpu': {
+        'high': 20000000,        # 20m
+        'low': 5000000,          # 5m
+        'request': 10000000,     # 10m
+        'limit': 30000000        # 30m
+    },
+    'memory': {
+        'high': 100 * 1024 * 1024,   # 100Mi
+        'low': 35 * 1024 * 1024,     # 35Mi (above actual 30.9Mi)
+        'request': 70 * 1024 * 1024, # 70Mi
+        'limit': 150 * 1024 * 1024   # 150Mi
+    }
+}
+```
+
+## 5. Both CPU & Memory Overflow
+
+```python
+self.thresholds = {
+    'cpu': {
+        'high': 10000000,        # 10m (below actual 11.08m)
+        'low': 5000000,          # 5m
+        'request': 8000000,      # 8m
+        'limit': 15000000        # 15m
+    },
+    'memory': {
+        'high': 25 * 1024 * 1024,    # 25Mi (below actual 30.9Mi)
+        'low': 10 * 1024 * 1024,     # 10Mi
+        'request': 20 * 1024 * 1024, # 20Mi
+        'limit': 40 * 1024 * 1024    # 40Mi
+    }
+}
+```
+
+## 6. Both CPU & Memory Underflow
+
+```python
+self.thresholds = {
+    'cpu': {
+        'high': 100000000,       # 100m
+        'low': 15000000,         # 15m (above actual 11.08m)
+        'request': 50000000,     # 50m
+        'limit': 150000000       # 150m
+    },
+    'memory': {
+        'high': 100 * 1024 * 1024,   # 100Mi
+        'low': 35 * 1024 * 1024,     # 35Mi (above actual 30.9Mi)
+        'request': 70 * 1024 * 1024, # 70Mi
+        'limit': 150 * 1024 * 1024   # 150Mi
+    }
+}
+```
+
+You can replace the threshold values in your `ResourceAnalyzer` class with any of these configurations to see the different alert types in action.
