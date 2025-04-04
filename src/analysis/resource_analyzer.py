@@ -9,10 +9,10 @@ class ResourceAnalyzer:
         # Mock thresholds - we'd adjust these based on actual pod requirements
         self.thresholds = {
             'cpu': {
-                'high': 10000000,        # 10m (below actual 11.08m)
+                'high': 20000000,        # 20m
                 'low': 5000000,          # 5m
-                'request': 8000000,      # 8m
-                'limit': 15000000        # 15m
+                'request': 12000000,     # 12m
+                'limit': 25000000        # 25m
             },
             'memory': {
                 'high': 25 * 1024 * 1024,    # 25Mi (below actual 30.9Mi)
